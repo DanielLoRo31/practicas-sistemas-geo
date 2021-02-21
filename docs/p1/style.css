@@ -18,8 +18,46 @@
 }
 
 .carousel-item {
-    height: 400px !important;
+    height: calc(100vh - 112px) !important;
     background-position: center center;
     background-size: 100% auto;
     background-repeat: no-repeat;
+}
+
+.nav-container {
+    position: sticky !important;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    border: none;
+    border-bottom: 3px solid red;
+    box-sizing: border-box;
+    height: 112px;
+    background-color: white;
+}
+
+.nav-link.active {
+    color: red !important;
+    font-weight: 500;
+}
+
+.nav-link.active:hover {
+    border: none !important;
+}
+
+.nav-link:hover {
+    border: none;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.562);
+    color: rgba(255, 0, 0, 0.514) !important;
+}
+
+.general-container {
+    height: 100vh;
+    padding-top: 112px;
+}
+
+.general-container.solid {
+    background-color: rgba(255, 0, 0, 0.712);
+    color: white !important;
 }
