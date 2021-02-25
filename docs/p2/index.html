@@ -13,7 +13,7 @@
 
     <h1>Objeto Navigator</h1>
 
-    <button onclick="obtieneDatos()">Obtiene datos del navegador</button>
+    <button onclick="obtieneDatos()">Obtener Datos</button>
 
     <ul id="navegador">
       <li></li>
@@ -28,10 +28,10 @@
       var datos = navegador.getElementsByTagName("li");
 
       function obtieneDatos() {
-        datos[0].innerHTML = "Nombre del navegador es: "  + navigator.appCodeName;
-        datos[1].innerHTML = "La versión del navegador es: " + navigator.appVersion;
-        datos[2].innerHTML = "Estatus de internet: " + navigator.onLine;
-        datos[3].innerHTML = "Plataforma: " + navigator.platform;
+        datos[0].innerHTML = "<span class='title'>Nombre del navegador es:</span> "  + navigator.appCodeName;
+        datos[1].innerHTML = "<span class='title'>La versión del navegador es:</span> " + navigator.appVersion;
+        datos[2].innerHTML = "<span class='title'>Estatus de internet:</span> " + navigator.onLine;
+        datos[3].innerHTML = "<span class='title'>Plataforma:</span> " + navigator.platform;
       }
 
     </script>

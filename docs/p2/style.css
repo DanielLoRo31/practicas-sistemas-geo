@@ -46,3 +46,7 @@ ul > li{
     list-style: none;
     font-family: "Trirong", serif;
 }
+
+.title {
+    color: red;
+}
