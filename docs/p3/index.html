@@ -4,34 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Obtiene Coordenadas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="style.css">
+    <title>Coordenadas</title>
 </head>
 <body>
 
-  <p>Haz clic para obtener las coordenadas de tu dispositivo</p>
+  <h1>Obtener Coordenadas</h1>
 
   <button onclick="getLocation()">Obtener Coordenadas</button>
   
-  <p id="demo"></p>
+  <ul id="demo">
+  </ul>
   
-  <script>
-  var x = document.getElementById("demo");
-  
-  function getLocation() {
-
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-    } else { 
-      x.innerHTML = "El navegador no dispone la capacidad de geolocalización";
-    }
-  }
-  
-  function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-  }
-  </script>
-
+  <script src="client.js"></script>
     
 </body>
 </html>

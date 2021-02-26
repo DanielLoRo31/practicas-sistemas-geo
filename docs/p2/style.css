@@ -11,42 +11,40 @@ h1 {
 }
 
 button {
-    outline: none;
-    background-color: red;
-    color: white;
-    padding: 10px 15px;
-    font-family: "Trirong", serif;
-    border: 0px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .1s;
-    transform: scale(1);
-    width: 150px;
-    box-sizing: border-box;
+  outline: none;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  font-family: "Trirong", serif;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+  transform: scale(1);
+  width: 150px;
+  box-sizing: border-box;
 }
 
 button:hover {
-    transform: scale(1.1);
-    border-radius: 15px;
-
+  transform: scale(1.1);
+  border-radius: 15px;
 }
 
 button:active {
-    opacity: .8;
-
+  opacity: 0.8;
 }
 
 ul {
-    padding: 0px;
-    margin: 0px;
-    margin-top: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 20px;
 }
 
-ul > li{
-    list-style: none;
-    font-family: "Trirong", serif;
+ul > li {
+  list-style: none;
+  font-family: "Trirong", serif;
 }
 
 .title {
-    color: red;
+  color: red;
 }
