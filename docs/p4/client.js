@@ -9,7 +9,6 @@ const obtieneUbicacion = () => {
 const muestraPosicion = (posicion) => {
     var coordenadas =
       posicion.coords.latitude + "," + posicion.coords.longitude;
-    console.log(coordenadas);
 
     var imagenurl =
       "https://maps.googleapis.com/maps/api/staticmap?center=" +

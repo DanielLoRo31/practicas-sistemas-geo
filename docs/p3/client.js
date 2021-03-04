@@ -1,6 +1,6 @@
 var x = document.getElementById("demo");
 
-function getLocation() {
+const getLocation = () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
@@ -8,7 +8,7 @@ function getLocation() {
   }
 }
 
-function showPosition(position) {
+const showPosition = (position) => {
     x.innerHTML =
     "<li>Latitude: " +
     position.coords.latitude +
