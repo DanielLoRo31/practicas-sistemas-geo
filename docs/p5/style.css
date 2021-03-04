@@ -15,3 +15,27 @@ body {
 .div-title strong{
     color: red;
 }
+
+button {
+    outline: none;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    font-family: "Trirong", serif;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+    transform: scale(1);
+    width: 150px;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+  }
+  
+  button:active {
+    opacity: 0.8;
+  }

@@ -29,7 +29,7 @@ const datos = [
   },
   {
     posicion: {
-      lat: 21.18230,
+      lat: 21.1823,
       lng: -101.71252,
     },
     titulo: "Casa Fabricio",
@@ -44,7 +44,7 @@ const datos = [
     titulo: "Terreno Reu",
     direccion: "Troncos 110, Los Cedros, 37149 León, Gto. ",
     telefono: "479 138 5506.",
-  }
+  },
 ];
 
 const retornarString = (nombre, direccion, telefono) => {
@@ -55,17 +55,21 @@ const retornarString = (nombre, direccion, telefono) => {
   return informacion;
 };
 
-function iniciaMapa() {
-  var propiedades = {
+const crearMapa = () => {
+  const propiedadesIniciales = {
     center: {
       lat: 21.152639,
       lng: -101.711598,
     },
     zoom: 14,
   };
-
   const mapa = document.getElementById("map");
-  const map = new google.maps.Map(mapa, propiedades);
+  const map = new google.maps.Map(mapa, propiedadesIniciales);
+  return map;
+};
+
+function iniciaMapa() {
+  const map = crearMapa();
 
   datos.forEach((d, index) => {
     let propiedadesMarcador = {
@@ -87,3 +91,19 @@ function iniciaMapa() {
     });
   });
 }
+
+var addDato = () => {
+  var data = {
+    posicion: {
+      lat: +document.getElementById("lat").value,
+      lng: +document.getElementById("lng").value,
+    },
+    titulo: document.getElementById("titulo").value,
+    direccion:
+    document.getElementById("direccion").value,
+    telefono: document.getElementById("telefono").value,
+  };
+  datos.push(data);
+
+  iniciaMapa()
+};
