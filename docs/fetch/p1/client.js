@@ -6,7 +6,11 @@ fetch("datos.json").then((response) => {
       let h2 = document.createElement("h2");
       let span = document.createElement("span");
       span.textContent = "País: "
-      h2.appendChild("hola");
+      h2.appendChild(span);
+      h2.innerHTML += registro.country;
+      span.textContent = "casos: "
+      h2.appendChild(span);
+      h2.innerHTML += registro.cases;
       // h2.appendChild(registro.country + ", casos:" + registro.cases)
       paises.appendChild(h2);
     });
