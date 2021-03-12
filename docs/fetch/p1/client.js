@@ -7,8 +7,7 @@ fetch("datos.json").then((response) => {
       let span = document.createElement("span");
       span.textContent = "País: "
       h2.appendChild(span);
-      h2.textContent =
-        registro.country + ", casos:" + registro.cases;
+      h2.appendChild(registro.country + ", casos:" + registro.cases)
       paises.appendChild(h2);
     });
   });
