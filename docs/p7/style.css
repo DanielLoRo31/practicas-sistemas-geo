@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trirong", serif;
+}
+
+#mapa {
+  width: 100%;
+  height: 640px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+button {
+  outline: none !important;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  font-family: "Trirong", serif;
+  border: 0px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+  transform: scale(1);
+  width: 150px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+}
+
+button:active {
+  opacity: 0.8;
+}
