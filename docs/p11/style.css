@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Trirong", serif;
+}
+
+.map-container {
+  position: relative;
+  width: auto;
+  /* width: 100%;
+  height: 340px; */
+  box-sizing: border-box;
+  border: 5px solid red;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.map-style {
+  width: 100%;
+  height: 340px;
+  border-radius: 17px;
+}
+
+.map-style + .map-title {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.486);
+}
+
+.map-container:hover > .map-title {
+    display: none;
+}
+
+.map-title > p {
+    text-transform: uppercase;
+}
+
+.title {
+  color: red;
+}
