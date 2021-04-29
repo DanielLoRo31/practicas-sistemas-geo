@@ -1,0 +1,30 @@
+.card-image {
+  width: 70%;
+  /* height: 50px; */
+  background-color: rgba(92, 91, 22, 0.404);
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+
+.card-data {
+  display: flex;
+  align-items: center;
+}
+.titles-card {
+  flex: 1;
+}
+
+.titles-card h1 {
+  
+  font-size: 30px;
+  font-family: "Trirong", serif;
+  font-weight: bold;
+}
+
+.titles-card h1 span{
+    color: white;
+    /*font-size: 30px;
+    font-family: "Trirong", serif; */
+    font-weight: 400;
+  }

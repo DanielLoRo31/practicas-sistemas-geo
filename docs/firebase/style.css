@@ -1,0 +1,28 @@
+body {
+    font-family: 'RocknRoll One', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+a {
+    background-color: rgb(177, 124, 27);
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    margin: 20px 5px;
+    transition: 0.1s;
+    transform: scale(1);
+}
+
+a:hover {
+    opacity: .7;
+}
+
+a:active {
+    opacity: 1;
+}
