@@ -1,0 +1,35 @@
+#lista {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style:none;
+  /* background-color: black; */
+}
+
+.li-container {
+  text-decoration: none;
+  list-style:none;
+  padding: 20px;
+  background-color: rgba(163, 137, 18, 0.486);
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.li-container .div-inputs input {
+  text-align: center;
+}
+
+.li-container .div-buttons {
+  padding: 0px;
+  /* background-color: rebeccapurple; */
+  display: flex;
+}
+
+.li-container .div-buttons button {
+  margin: 5px !important;
+  flex: 1;
+}
+
+.modal-content {
+  background-color: #b08c4c !important;
+}
